@@ -1,7 +1,7 @@
 import random,hangman_words,hangman_art
 lives = 6
 chosen_word = random.choice(hangman_words.word_list)
-print(chosen_word)
+print(chosen_word)             #This is for the referrence that which word is being selected.You can remove it when implementing the game.
 placeholder = ""
 word_length = len(chosen_word)
 for position in range(word_length):
