@@ -1,42 +1,38 @@
 # HangMan-Game
-This is a Python implementation of the classic Hangman game. Players attempt to guess the letters of a randomly chosen word within a limited number of lives.
+# **Hangman Game**
 
-#Features:
+This is a Python implementation of the classic **Hangman** game. Test your vocabulary and guessing skills by attempting to reveal a hidden word, one letter at a time, before you run out of lives.
 
-   1.Randomly selects a word from a predefined word list.
+---
 
-   2.Tracks and displays the player’s progress.
+## **Features**
+1. 🎲 **Random Word Selection**: A random word is chosen from a predefined list in each game.
+2. 📝 **Progress Tracking**: Displays the word with correctly guessed letters filled in.
+3. ❌ **Life Deduction**: Lose a life for each incorrect guess.
+4. 🚫 **Duplicate Prevention**: Alerts players if they attempt to guess the same letter again.
+5. 🏆 **Win/Lose Messages**: Clear feedback when the game concludes.
 
-   3.Tracks incorrect guesses and deducts lives.
+---
 
-   4.Prevents duplicate guesses.
+## **Files Included**
+1. **`hangman_words.py`**  
+   Contains the `word_list` variable with a list of possible words.
+   
+2. **`hangman_art.py`**  
+   Provides ASCII art for each stage of the hangman, enhancing the gameplay experience.
+   
+3. **`main.py`**  
+   Implements the core game logic, including input handling, word checking, and displaying the hangman.
 
-   5.Provides a win or lose message at the end of the game.
+---
 
-#Files Included:
+## **Game Rules**
+1. 🎮 The player starts with **6 lives**.
+2. 🖋️ A random word is selected, and the player must guess its letters.
+3. ✅ Correct guesses reveal the positions of the guessed letter in the word.
+4. ❌ Incorrect guesses reduce the player’s remaining lives by one.
+5. 🕹️ The game ends when:
+   - The player successfully guesses the entire word (**Win**).
+   - The player runs out of lives (**Lose**).
 
-   1.hangman_words.py: Contains the word_list variable with a list of words for the game.
-
-   2.hangman_art.py: Contains ASCII art for the hangman stages and other visuals.
-
-   3.main.py: Contains the core game logic.
-
-#Game Rules:
-
-1.The player starts with 6 lives.
-
-2.A random word is chosen, and the player must guess the letters in the word.
-
-3.If the player guesses a correct letter, it is revealed in the word.
-
-4.If the player guesses an incorrect letter, they lose one life.
-
-5.The game ends when:
-
-   The player successfully guesses the word (win).
-  The player runs out of lives (lose).
-
-#Inspired by classic hangman games and ASCII art creators.
-
-
-
+---
